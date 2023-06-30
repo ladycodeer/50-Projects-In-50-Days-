@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task 1</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Here You Can See My favorite Animes</h1>
+        <h5>Note: Click the name to watch the official trailer.</h5>
+        <button id="button" onclick="playaudio()" type="button"> Play the Audio </button>
+        <button onclick="pauseaudio()" type="button"> Pause the Audio </button>
+        <button onclick="stopaudio()" type="button"> Stop the Audio </button>
+    </div>
+    <div class="container">
+
+        <div class="panel " style="background-image: url('movingcastle.jpg');">
+            <h3>
+                <a class="link" href="https://youtu.be/iwROgK94zcM" target="_blank">Howl's Moving Castle</a>
+            </h3>
+        </div>
+        <div class="panel" style="background-image: url('studio-ghibli-spirited-away.jpg');">
+            <h3>
+                <a class="link" href="https://youtu.be/ByXuk9QqQkk" target="_blank">Spirited Away</a>
+            </h3>
+        </div>
+        <div class="panel" style="background-image: url('my-neighbor-totoro.jpg');">
+            <h3>
+                <a class="link" href="https://youtu.be/92a7Hj0ijLs" target="_blank">My Neighbor Totoro</a>
+            </h3>
+        </div>
+        <div class="panel" style="background-image: url('studio-ghibli-nature-landscape-the-wind-rises.jpg');">
+            <h3>
+                <a class="link" href="https://youtu.be/RzSpDgiF5y8" target="_blank">The-wind-rises</a>
+            </h3>
+
+        </div>
+        <div class="panel" style="background-image: url('anime-natural-light-landscape-forest.jpg');">
+            <h3>Landscape-forest</h3>
+        </div>
+        <div class="panel" style="background-image: url('wallpaperflare.com_wallpaper (3).jpg');">
+            <h3>Moving Castle</h3>
+        </div>
+
+
+    </div>
+    <audio id="idAudio" controls autoplay hidden class="myAudio" src="always with me flute.mp3" type="audio"></audio>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Muli:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #F2E3DB;
+    --color-2: #FF8787;
+    --color-3: #FFD93D;
+    --color-4: #9E6F21;
+    --color-5: #E86A33;
+}
+
+h1 {
+    color: transparent;
+    font-family: sans-serif;
+    margin: auto;
+    text-transform: uppercase;
+    background: linear-gradient(220deg, var(--color-1) 19%,
+            transparent 19%, transparent 20%,
+            var(--color-2) 20%, var(--color-2) 39%,
+            transparent 39%, transparent 40%,
+            var(--color-3) 40%, var(--color-3) 59%,
+            transparent 59%, transparent 60%,
+            var(--color-4) 60%, var(--color-4) 79%,
+            transparent 79%, transparent 80%,
+            var(--color-5) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: #285430;
+}
+
+h5 {
+    color: #A4BE7B;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+
+}
+
+.panel a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header button {
+
+    background-color: #9CA777;
+    border: none;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 5px;
+    width: 180px;
+    font: bold;
+}
+
+.header button:hover {
+    background-color: black;
+
+}
+
+.header {
+    display: grid;
+    margin-left: 15px;
+    color: #fff;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.5s ease-in;
+
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+
+}
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+
+    }
+
+    .panel:nth-last-of-type(4),
+    .panel:nth-last-of-type(5) {
+        display: none;
+    }
+}
